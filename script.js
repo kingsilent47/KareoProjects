@@ -24,3 +24,13 @@ function toggleMenu() {
       }
     });
   });
+
+document.querySelectorAll('.card-career[data-email-subject]').forEach(card => {
+  card.addEventListener('click', function() {
+    const subject = this.getAttribute('data-email-subject');
+    const recipients = 'kareoprojects@gmail.com,motake.beauty75@gmail.com';
+    const encodedSubject = encodeURIComponent(subject);
+    window.location.href = `mailto:${recipients}?subject=${encodedSubject}`;
+  });
+  card.style.cursor = 'pointer';
+});
