@@ -228,25 +228,29 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-.card-career {
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  padding: 1.8rem 1.5rem;
-  background-color: #fff;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .card-career {
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 2.5rem;
+      background-color: #fff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+      /* Clean centered layout */
+      max-width: 900px;
+      margin: 3rem auto;
+      box-sizing: border-box;
+    
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
 
-  /* Make full page safely */
-  width: 100%;
-  height: 100vh;
-  box-sizing: border-box;
-  margin: 0 auto;
-
-  /* Center the content inside the card */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/* Hover effect for extra polish */
+.card-career:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
   
   .card:hover {
