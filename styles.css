@@ -12,7 +12,8 @@
     background-color: #fff;
     
     margin: 0;
-    height: 100vh;
+    height: 100%;
+    overflow-x: hidden;
   }
   
   .container {
@@ -235,11 +236,11 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-  /* Make full page */
-  width: 100vw;
+  /* Make full page safely */
+  width: 100%;
   height: 100vh;
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
 
   /* Center the content inside the card */
   display: flex;
